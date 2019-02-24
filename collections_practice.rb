@@ -26,7 +26,7 @@ def merge_data data_one, data_two
     puts data_one.inspect
     puts data_two[0].inspect
 
-    data_two[0].each_with_index.map { |item, index|
-      data_one[index]["blake"].merge(item)
+    data_two[0].map { |key, value|
+      data_one[index]["blake"].merge(value)
     }
 end
