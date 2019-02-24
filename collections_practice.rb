@@ -31,3 +31,6 @@ def merge_data data_one, data_two
       merged_data
     }
 end
+
+def find_cool
+end
