@@ -40,6 +40,8 @@ def organize_schools schools
   puts schools.inspect
   schools.reduce({}) { |accumulator, school|
     name = school[1][:location]
+    accumulator[name] ||= []
     accumulator[name] ||= school[0]
+    accumulator
   }
 end
