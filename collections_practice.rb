@@ -41,7 +41,7 @@ def organize_schools schools
   schools.reduce({}) { |accumulator, school|
     name = school[1][:location]
     accumulator[name] ||= []
-    accumulator[name] ||= school[0]
+    accumulator[name].push school[0]
     accumulator
   }
 end
