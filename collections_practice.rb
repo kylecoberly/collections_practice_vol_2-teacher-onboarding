@@ -39,7 +39,7 @@ end
 def organize_schools schools
   puts schools.inspect
   schools.reduce({}) { |accumulator, school|
-    puts school[0].inspect
+    puts school[1].inspect
     accumulator[school[1][:location]] << school[0]
   }
 end
