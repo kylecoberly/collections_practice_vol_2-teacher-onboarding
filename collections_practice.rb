@@ -23,9 +23,10 @@ def count_elements array
 end
 
 def merge_data data_one, data_two
-    puts data_two.inspect
     puts data_one.inspect
-    data_one[1].each_with_index.map { |item, index|
+    puts data_two.inspect
+    
+    data_two[0].each_with_index.map { |item, index|
       data_two[index]["blake"].merge(item)
     }
 end
