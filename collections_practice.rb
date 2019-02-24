@@ -28,6 +28,7 @@ def merge_data data_one, data_two
     index = 0
 
     data_two[0].map { |key, value|
-      data_one[index++].merge(value)
+      data_one[index].merge(value)
+      index += 1
     }
 end
