@@ -32,5 +32,5 @@ def merge_data data_one, data_two
     }
 end
 
-def find_cool
+def find_cool array
 end
