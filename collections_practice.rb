@@ -37,11 +37,10 @@ def find_cool array
 end
 
 def organize_schools schools
-  puts schools.inspect
   schools.reduce({}) { |accumulator, school|
     name = school[1][:location]
-    accumulator[name] ||= []
-    accumulator[name].push school[0]
+    accumulator[school[1][:location]] ||= []
+    accumulator[school[1][:location]].push school[0]
     accumulator
   }
 end
