@@ -27,6 +27,6 @@ def merge_data data_one, data_two
     puts data_two[0].inspect
 
     data_two[0].map { |key, value|
-      data_one[index]["blake"].merge(value)
+      data_one[0].merge(value)
     }
 end
